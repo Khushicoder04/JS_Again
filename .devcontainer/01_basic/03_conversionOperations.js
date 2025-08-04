@@ -20,3 +20,31 @@ console.log(booleanIsLoggedIn);
 let someNm = 33
 let StringNum = String(someNm)
 console.log(typeof StringNum);
+
+//****************** Operations ****************
+
+let value = 3
+let negValue = -value
+console.log(negValue);
+
+//console.log(2**3) => 2 to the power 2
+
+let str1 = "hello"
+let str2 = " khushi"
+let str3 = str1 + str2
+console.log(str3);
+
+console.log("1" + 2); //12
+console.log(1 + "2");// 12
+console.log("1" + 2 + 2);//122
+console.log(1 + 2 + "2");//32
+
+console.log(+true); //1
+console.log(+"");//0
+
+let gameCounter = 100
+//gameCounter++;//101
+++gameCounter;//101
+console.log(gameCounter);
+
+
