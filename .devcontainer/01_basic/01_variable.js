@@ -16,4 +16,5 @@ console.table([accId, accEmail, accPass, accCity, accState])
 /*
 prefer not use var because of issue in block scope 
 and functional scope
+
 */
