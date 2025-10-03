@@ -1,6 +1,6 @@
-// Primitive
+// Primitive   //call by value
 
-// 7 types: String, Number, Boolean, Null, undefined, Symbol,
+// 7 types: String, Number, Boolean, Null-->empty, undefined, Symbol,
 // BigInt
 
 // in js we won't define language
@@ -32,3 +32,5 @@ const myFun = function(){
 }
 
 console.log(typeof myFun);
+
+//ecma-international.org
