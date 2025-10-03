@@ -18,3 +18,11 @@ prefer not use var because of issue in block scope
 and functional scope
 
 */
+
+//Which one is better?
+
+// ✅ Use const by default — safer, avoids accidental reassignments.
+
+// ✅ Use let when the value will change (loops, counters, reassignment).
+
+// 🚫 Avoid var — it’s outdated and leads to bugs because of function scoping + hoisting.

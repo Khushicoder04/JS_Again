@@ -1,5 +1,7 @@
 // Primitive   //call by value
 
+const { captureOwnerStack } = require("react");
+
 // 7 types: String, Number, Boolean, Null-->empty, undefined, Symbol,
 // BigInt
 
