@@ -19,11 +19,24 @@ const JsUser = {
     isLoggedIn: false,
     lastLoginDays: ["Monday", "Tuesday"]
 }
+const JsUser1 = {
+    name: "Yashi", //in this name is processed as string
+    "full name": "Yashi Rai", // we cant access this using dot
+    [mySym]: "MyKey2", //use it like a symbol write in a square bracket
+    age: 18,
+    location: "Hyd",
+    email: "y@gmail.com",
+    isLoggedIn: false,
+    lastLoginDays: ["Monday", "Tuesday"]
+}
+
 
 console.log(JsUser.email);
 console.log(JsUser["email"]);
 console.log(JsUser["full name"]);
 console.log(JsUser[mySym]);
+
+console.log(JsUser1.email);
 
 //how to change
 JsUser.email = "a@gmail.com"
