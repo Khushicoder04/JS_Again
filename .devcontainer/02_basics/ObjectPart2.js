@@ -48,3 +48,31 @@ console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
+
+const course = {
+    coursename : "js",
+    price: "999",
+    courseInstructor: " Khushi"
+}
+
+//course.courseInstructor
+//another method
+const {courseInstructor : Ins} = course
+//console.log(courseInstructor);
+console.log(Ins);
+
+
+//API
+//Json--> javascript object notation
+// {
+//   "name": "Khushi",
+//   "coursename" = "js",
+//   "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
+
