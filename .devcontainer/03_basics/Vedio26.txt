@@ -1,0 +1,21 @@
+javaScript execution Context
+
+{}--> global ec <-- this(var)
+global execution Context
+function execution Context
+eval execution code
+
+box is there in which we have js code {}
+it will run in two phase 
+memory creation phase
+execution phase
+
+let see one code 
+let val1 = 10
+let val2 = 5
+function addNum(num1, num2){
+    let tot = num1 + num2
+    return tot
+}
+let res1 = addNum(val1, val2)
+let res2 = addNum(10, 2);
