@@ -1,0 +1,49 @@
+javaScript execution Context
+
+{}--> global ec <-- this(var)
+global execution Context
+function execution Context
+eval execution code
+
+box is there in which we have js code {}
+it will run in two phase 
+memory creation phase
+execution phase
+
+let see one code 
+
+let val1 = 10
+let val2 = 5
+function addNum(num1, num2){
+    let tot = num1 + num2
+    return tot
+}
+let res1 = addNum(val1, val2)
+let res2 = addNum(10, 2);
+
+step:
+1. global execution locte in this
+2. memory phase in this collect allthe var and just put here
+       val1 --> undefined
+       val2 --> undefined
+       addnum --> definition
+       res1 --> undefined
+       res2 --> undefined
+
+3. execution phase
+   val1 <-- 10
+   val2 <-- 5
+   adnum ---> this will create another executionl Context
+                new environment + execution thread
+                again in this memory phase and execution phase will 
+                occur for addnum.
+                1. memory phase
+                val1 --> undefined
+                val2 -->undefined
+                tot --> undefined
+                2. execution Context
+                num1-->10
+                num2-->5
+                tot-->15
+
+call stack  --> lifo conceft
