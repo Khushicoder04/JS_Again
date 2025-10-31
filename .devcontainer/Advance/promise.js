@@ -87,15 +87,30 @@ console.log(error);
 }
 consumePromiseFive()
 
-async function getAllUsers(){
-    try{
-    const response = await fetch('https://jsonPlaceholder.typicode.com/users')
-    const data = response.json();
-    console.log(data);
-}catch(error){
-    console.log("E: ", error);
+//async function getAllUsers(){
+//     try{
+//     const response = await fetch('https://jsonPlaceholder.typicode.com/users')
+//     const data = response.json();
+//     console.log(data);
+// }catch(error){
+//     console.log("E: ", error);
     
-}
-}
-getAllUsers()
+// }
+// }
+// getAllUsers()
+
+fetch('https://jsonPlaceholder.typicode.com/users')
+.then((response) => {
+    return response.json()
+})
+.then((data) => {
+    console.log(data);
+    
+})
+.catch((error) => console.log(error));
+
+
+
+
+
 //console.log(username);
